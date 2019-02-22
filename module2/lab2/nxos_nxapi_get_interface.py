@@ -30,7 +30,7 @@ if __name__ == "__main__":
     for a_field in field_list:
         interface[a_field] = rx_object['ins_api']['outputs']['output']['body']['TABLE_interface']['ROW_interface'][a_field]
 
-    print 'Management Interface Information:"
+    print 'Management Interface Information:'
     print 'IP Address:  ' + interface['eth_ip_addr'] + '/' + str(interface['eth_ip_mask'])
     print 'Speed:       ' + interface['eth_speed']
     print 'State:       ' + interface['state']
