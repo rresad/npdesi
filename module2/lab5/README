@@ -1,0 +1,2 @@
+use PATCH method for step5 route update not to delete existing routes
+use PUT method for step6 Loopback address change to delete existing secondary IP address with same request
