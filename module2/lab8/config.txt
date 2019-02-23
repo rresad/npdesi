@@ -1,0 +1,8 @@
+configure t
+nxapi https port 8443
+ip access-list MANAGEMENT-IN
+permit tcp any 192.168.1.15/32 eq 22
+permit tcp any 192.168.1.15/32 eq 80
+int mgmt 0
+ip access-group MANAGEMENT-IN in
+end
